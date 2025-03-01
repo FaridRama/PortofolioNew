@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.section-1 {
+  background-color: rgb(0, 0, 0);
+}
+.section-2 {
+  background-color: rgb(14, 14, 14);
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  text-align: center;
+  transform: translateX(40rem);
+  background-color: #f5ecd5;
+  color: #000000;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+/* navbar start */
+nav {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50rem;
+  align-items: center;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.link:hover .dropdown-content {
+  display: block;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: rgb(211, 3, 3);
+  text-shadow: 0 0 10px rgb(211, 3, 3);
+}
+
+.hamburg,
+.cancel {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: white;
+  display: none;
+  font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links {
+  display: flex;
+}
+
+.nav-container .links a {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
+}
+
+.nav-container .links a:hover {
+  color: rgb(211, 3, 3);
+  border-bottom: 2px solid rgb(211, 3, 3);
+}
+
+.dropdown {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  transform: translateY(-500px);
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(4px) brightness(40%);
+  box-shadow: 0 0 20px black;
+  transition: 0.2s linear;
+}
+
+.dropdown .links a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+  background-color: rgb(211, 3, 3);
+}
+/* navbar end */
+
+/* menu home start */
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-2 .teks-1{
+  transform: translateY(150px);
+}
+
+.section-1 .teks-1{
+  transform: translateY(150px);
+}
+
+main .teks-1 h2{
+  color: rgb(211, 3, 3);
+  text-shadow: 0 0 10px rgb(211, 3, 3);
+}
+
+.teks-1 {
+  transform: translateY(15rem);
+  margin-left: 9rem;
+}
+
+.kampung2 {
+  font-size: 5rem;
+}
+
+.kampung3 {
+  width: 40%;
+  text-align: justify;
+}
+
+/* Gambar satu start */
+.fig-one img {
+  transform: translateX(55rem);
+  margin-top: -5rem;
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-1 {
+  margin-left: 68rem;
+}
+/* Gambar satu end */
+
+/* Gambar dua start */
+.fig-two img {
+  margin-left: 53rem;
+  transform: translateY(-13rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-2 {
+  transform: translateY(-12.5rem);
+  margin-left: 68rem;
+}
+/* Gambar dua end */
+
+/* Gambar tiga start */
+.fig-three img {
+  margin-left: 53rem;
+  transform: translateY(-13rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-3 {
+  transform: translateY(-12.5rem);
+  margin-left: 62rem;
+}
+/* Gambar tiga end */
+
+/* Gambar empat start */
+.fig-four img {
+  margin-left: 53rem;
+  transform: translateY(-13rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-4 {
+  transform: translateY(-12.5rem);
+  margin-left: 68rem;
+}
+/* Gambar empat end */
+
+/* Gambar lima start */
+.fig-five img {
+  margin-left: 53rem;
+  transform: translateY(-13.5rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-5 {
+  transform: translateY(-13rem);
+  margin-left: 68rem;
+}
+/* Gambar lima end */
+
+/* Gambar enam start */
+.fig-six img {
+  margin-left: 53rem;
+  transform: translateY(-6rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+}
+
+.fig-6 {
+  transform: translateY(-6rem);
+  margin-left: 67rem;
+}
+/* Gambar enam end */
+
+/* Gambar tujuh start */
+.fig-seven img { 
+  transform: translateX(50rem);
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.fig-7 {
+  transform: translateY(-10rem); 
+  margin-left: 0; 
+  text-align: center;
+}
+
+.fig-7:hover .fig-seven img {
+  transform: translateY(-10rem); 
+  opacity: 1;
+}
+/* Gambar tujuh end */
+
+.footer2 {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+}
+.footer2 p a {
+  text-decoration: none;
+}
